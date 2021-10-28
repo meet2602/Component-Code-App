@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable-v24/ic_baseline_delete_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_animation.xml" value="0.264" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_multiple_delete_item.xml" value="0.4" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_permission.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_snack_bar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_tab_layout_with_view_pager.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_theme_change.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/custom_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_album.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_video.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/item_main.xml" value="0.264" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/loading.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/progress.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/snack_bar_light_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/mipmap-anydpi-v26/app_logo.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/mipmap-anydpi-v26/app_logo_round.xml" value="0.2703125" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
