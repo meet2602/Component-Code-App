@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
         <activity
+            android:name=".ExpansionPanelActivity"
+            android:exported="false" />
+        <activity
             android:name=".DialogActivity"
             android:exported="false" />
         <activity

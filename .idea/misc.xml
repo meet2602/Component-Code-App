@@ -7,6 +7,7 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_animation.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_expansion_panel.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_multiple_delete_item.xml" value="0.4" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_permission.xml" value="0.24010416666666667" />
@@ -14,6 +15,7 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_tab_layout_with_view_pager.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_theme_change.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/custom_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/expand_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_album.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_video.xml" value="0.25416666666666665" />

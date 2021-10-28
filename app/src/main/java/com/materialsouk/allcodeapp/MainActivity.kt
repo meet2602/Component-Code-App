@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.dialogBtn).setOnClickListener {
             startActivity(Intent(this, DialogActivity::class.java))
         }
+        findViewById<Button>(R.id.expansionPanelBtn).setOnClickListener {
+            startActivity(Intent(this, ExpansionPanelActivity::class.java))
+        }
     }
 
 
