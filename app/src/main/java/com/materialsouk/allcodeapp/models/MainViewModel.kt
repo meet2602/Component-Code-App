@@ -1,5 +1,4 @@
 package com.materialsouk.allcodeapp.models
-
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 

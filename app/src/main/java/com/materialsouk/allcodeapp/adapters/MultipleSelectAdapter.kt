@@ -54,7 +54,7 @@ class MultipleSelectAdapter(
                             menu: Menu
                         ): Boolean {
                             val menuInflater = mode.menuInflater
-                            menuInflater.inflate(R.menu.menu, menu)
+                            menuInflater.inflate(R.menu.select_menu, menu)
                             return true
                         }
 

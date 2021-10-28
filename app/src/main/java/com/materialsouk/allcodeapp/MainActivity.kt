@@ -37,6 +37,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.expansionPanelBtn).setOnClickListener {
             startActivity(Intent(this, ExpansionPanelActivity::class.java))
         }
+        findViewById<Button>(R.id.searchBarBtn).setOnClickListener {
+            startActivity(Intent(this, SearchActivity::class.java))
+        }
     }
 
 

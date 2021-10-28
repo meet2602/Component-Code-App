@@ -2,15 +2,21 @@ package com.materialsouk.allcodeapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.widget.ArrayAdapter
+
+import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.RecyclerView
 import com.materialsouk.allcodeapp.adapters.ExpandAdapter
 import com.materialsouk.allcodeapp.models.ExpandModel
 
-class ExpansionPanelActivity : AppCompatActivity() {
-    private lateinit var arrayList: ArrayList<ExpandModel>
+
+class SearchWithMenuActivity : AppCompatActivity() {
+    private lateinit var adapter: ArrayAdapter<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_expansion_panel)
+        setContentView(R.layout.activity_search_with_menu)
+
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         arrayList = ArrayList()
         arrayList.add(ExpandModel("Meet",false))
@@ -29,4 +35,24 @@ class ExpansionPanelActivity : AppCompatActivity() {
 
         recyclerView.adapter = adapter
     }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.search_menu, menu)
+        val search = menu.findItem(R.id.app_bar_search)
+        val searchView = search.actionView as SearchView
+        searchView.maxWidth = android.R.attr.width
+        searchView.queryHint = "Search"
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+            override fun onQueryTextChange(newText: String?): Boolean {
+                adapter.filter.filter(newText)
+                return true
+            }
+        })
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
 }

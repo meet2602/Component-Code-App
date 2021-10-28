@@ -10,6 +10,7 @@ import android.view.animation.Animation.RELATIVE_TO_SELF
 
 import android.view.animation.RotateAnimation
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.materialsouk.allcodeapp.models.ExpandModel
 
@@ -19,9 +20,9 @@ class ExpandAdapter(private val expandList: ArrayList<ExpandModel>) :
 
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-
-        val arrow: ImageView = itemView.findViewById(R.id.arrow);
-        val expandableLayout: ConstraintLayout = itemView.findViewById(R.id.expandableLayout);
+        val nameTxt: TextView = itemView.findViewById(R.id.part_name)
+        val arrow: ImageView = itemView.findViewById(R.id.arrow)
+        val expandableLayout: ConstraintLayout = itemView.findViewById(R.id.expandableLayout)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -31,7 +32,8 @@ class ExpandAdapter(private val expandList: ArrayList<ExpandModel>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val isExpanded: Boolean = expandList[position].isExpanded()
+        holder.nameTxt.text = expandList[position].getName()
+        val isExpanded: Boolean = expandList[position].getExpanded()
 
         if (isExpanded) {
             holder.expandableLayout.visibility = View.VISIBLE
@@ -47,7 +49,7 @@ class ExpandAdapter(private val expandList: ArrayList<ExpandModel>) :
             holder.arrow.animation = rotate
         }
         holder.itemView.setOnClickListener {
-            expandList[position].setExpanded(!expandList[position].isExpanded())
+            expandList[position].setExpanded(!expandList[position].getExpanded())
             notifyItemChanged(position)
         }
     }
