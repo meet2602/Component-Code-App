@@ -4,12 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable-v24/ic_baseline_delete_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable-v24/ic_check.xml" value="0.2703125" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable/ic_baseline_mic_24.xml" value="0.2703125" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_animation.xml" value="0.264" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_bottom_navigation_view.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_expansion_panel.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_multiple_delete_item.xml" value="0.4" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_multiple_delete_item.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_permission.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_search.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_search_bar.xml" value="0.264" />
@@ -26,6 +29,7 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/loading.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/progress.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/snack_bar_light_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/search_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/select_menu.xml" value="0.25416666666666665" />

@@ -40,6 +40,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.searchBarBtn).setOnClickListener {
             startActivity(Intent(this, SearchActivity::class.java))
         }
+        findViewById<Button>(R.id.bottomNavigationViewBtn).setOnClickListener {
+            startActivity(Intent(this, BottomNavigationViewActivity::class.java))
+        }
     }
 
 

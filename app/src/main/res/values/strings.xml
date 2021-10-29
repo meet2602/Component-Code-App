@@ -45,4 +45,5 @@
     <string name="search">Search</string>
     <string name="search_view_with_menu">Search View with Menu</string>
     <string name="srno">srNo</string>
+    <string name="bottom_navigation_view">Bottom Navigation View</string>
 </resources>
