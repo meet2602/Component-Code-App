@@ -27,6 +27,7 @@ class MultipleSelectAdapter(
     var selectList = ArrayList<String>()
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
+        val srNo: TextView = itemView.findViewById(R.id.srNo)
         val textView: TextView = itemView.findViewById(R.id.text_view)
         val ivCheck: ImageView = itemView.findViewById(R.id.iv_check_box)
     }
@@ -44,6 +45,7 @@ class MultipleSelectAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.srNo.text = (position+1).toString()
         holder.textView.text = arrayList[position]
         holder.itemView.setOnLongClickListener { v: View ->
             if (!isEnable) {
