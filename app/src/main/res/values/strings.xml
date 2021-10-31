@@ -51,5 +51,8 @@
     <string name="image_slider_using_viewpager">Image Slider using ViewPager</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="image_pick">Image Pick</string>
+    <string name="one_select_image">One Select image</string>
+    <string name="multiple_image_select">Multiple Image Select</string>
 
 </resources>

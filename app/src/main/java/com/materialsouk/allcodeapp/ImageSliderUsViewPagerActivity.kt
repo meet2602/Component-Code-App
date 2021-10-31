@@ -21,7 +21,7 @@ class ImageSliderUsViewPagerActivity : AppCompatActivity() {
 
         val mViewPager = findViewById<ViewPager>(R.id.viewPager)
 
-        val mViewPagerAdapter = ImageUsPagerAdapter(this, images)
+        val mViewPagerAdapter = ImageUsPagerAdapter(true,this, images,null)
         mViewPager.adapter = mViewPagerAdapter
     }
 

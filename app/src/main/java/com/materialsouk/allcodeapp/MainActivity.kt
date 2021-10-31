@@ -49,6 +49,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.imageSliderBtn).setOnClickListener {
             startActivity(Intent(this, ImageSliderActivity::class.java))
         }
+        findViewById<Button>(R.id.imagePickBtn).setOnClickListener {
+            startActivity(Intent(this, ImagePickActivity::class.java))
+        }
     }
 
 
