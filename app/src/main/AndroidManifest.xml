@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/app_logo"
@@ -12,6 +13,9 @@
         android:roundIcon="@mipmap/app_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
+        <activity
+            android:name=".RecyclerViewAnimationActivity"
+            android:exported="false" />
         <activity
             android:name=".ImagePickActivity"
             android:exported="false" />

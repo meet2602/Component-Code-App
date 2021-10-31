@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.animationBtn).setOnClickListener {
             startActivity(Intent(this, AnimationActivity::class.java))
         }
+        findViewById<Button>(R.id.recyclerViewAnimationBtn).setOnClickListener {
+            startActivity(Intent(this, RecyclerViewAnimationActivity::class.java))
+        }
         findViewById<Button>(R.id.viewPageWithViewPagerBtn).setOnClickListener {
             startActivity(Intent(this, TabLayoutWithViewPagerActivity::class.java))
         }

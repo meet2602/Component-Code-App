@@ -54,5 +54,14 @@
     <string name="image_pick">Image Pick</string>
     <string name="one_select_image">One Select image</string>
     <string name="multiple_image_select">Multiple Image Select</string>
+    <string name="recycler_view_animation">Recycler View Animation</string>
+
+    <string name="animation_slide_from_right">Slide from right</string>
+    <string name="animation_slide_from_bottom">Slide from bottom</string>
+    <string name="animation_fall_down">Fall down</string>
+    <string name="animation_scale">Scale</string>
+    <string name="animation_scale_random">Scale random</string>
+    <string name="refresh">Refresh</string>
+
 
 </resources>

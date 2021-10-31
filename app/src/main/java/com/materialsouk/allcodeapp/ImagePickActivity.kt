@@ -34,19 +34,20 @@ class ImagePickActivity : AppCompatActivity() {
                     // There are no request codes
                     val data: Intent? = result.data
                     val selectedImageUri: Uri? = data?.data
-                    if (null != selectedImageUri) {
-                        // Get the path from the Uri
-                        val path = getPathFromURI(selectedImageUri)
-                        findViewById<TextView>(R.id.textView).text = path
-                        findViewById<ImageView>(R.id.imageView2).setImageURI(selectedImageUri)
-                    }
+                    // Get the path from the Uri
+                    val path = getPathFromURI(selectedImageUri)
+                    findViewById<TextView>(R.id.textView).text = path
+                    findViewById<ImageView>(R.id.imageView2).setImageURI(selectedImageUri)
+
                 }
             }
         findViewById<Button>(R.id.oneImageSelectBtn).setOnClickListener {
             val intent = Intent()
-            intent.type = "image/*"
-            intent.action = Intent.ACTION_GET_CONTENT
-            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, false)
+            intent.apply {
+                type = "image/*"
+                action = Intent.ACTION_GET_CONTENT
+                putExtra(Intent.EXTRA_ALLOW_MULTIPLE, false)
+            }
             singleImageResultLauncher.launch(Intent.createChooser(intent, "Select Picture"))
 
         }
@@ -60,12 +61,11 @@ class ImagePickActivity : AppCompatActivity() {
                         for (i in 0 until count) {
                             val imageUri: Uri = data.clipData!!.getItemAt(i).uri
                             val path = getPathFromURI(imageUri)
-                            Log.d("$i",path)
+                            Log.d("$i", path)
                             urlArray.add(imageUri.toString())
                             urlNameArray.add(path)
                         }
-                    }
-                    else if (data?.data != null) {
+                    } else if (data?.data != null) {
                         val imagePath: Uri? = data.data
                         val path = getPathFromURI(imagePath)
                         Log.d("imagePath", path)
@@ -73,16 +73,23 @@ class ImagePickActivity : AppCompatActivity() {
                         urlNameArray.add(path)
                     }
                     findViewById<TextView>(R.id.textView1).text = urlNameArray.toString()
-                    val mViewPagerAdapter = ImageUsPagerAdapter(false,this, null,urlArray)
+                    val mViewPagerAdapter = ImageUsPagerAdapter(false, this, null, urlArray)
                     mViewPager.adapter = mViewPagerAdapter
                 }
             }
         findViewById<Button>(R.id.multipleImageSelectBtn).setOnClickListener {
             val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
-            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
-            intent.addCategory(Intent.CATEGORY_OPENABLE)
-            intent.type = "image/*"
-            multipleImageResultLauncher.launch(Intent.createChooser(intent, "Select Multiple Picture"))
+            intent.apply {
+                putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
+                addCategory(Intent.CATEGORY_OPENABLE)
+                type = "image/*"
+            }
+            multipleImageResultLauncher.launch(
+                Intent.createChooser(
+                    intent,
+                    "Select Multiple Picture"
+                )
+            )
         }
 
     }
