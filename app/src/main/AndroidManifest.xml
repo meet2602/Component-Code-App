@@ -14,46 +14,60 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
         <activity
+            android:label="@string/image_slider_using_viewpager"
             android:name=".ImageSliderUsViewPagerActivity"
             android:exported="false" />
         <activity
+            android:label="@string/image_slider"
             android:name=".ImageSliderActivity"
             android:exported="false" />
         <activity
+            android:label="@string/side_bar_navigation_view"
             android:name=".NavigationDrawerActivity"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
         <activity
+            android:label="@string/bottom_navigation_view"
             android:name=".BottomNavigationViewActivity"
             android:exported="false" />
         <activity
+            android:label="@string/search"
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
+            android:label="@string/search_bar"
             android:name=".SearchBarActivity"
             android:exported="false" />
         <activity
+            android:label="@string/search_view_with_menu"
             android:name=".SearchWithMenuActivity"
             android:exported="false" />
         <activity
+            android:label="@string/expansion_panel"
             android:name=".ExpansionPanelActivity"
             android:exported="false" />
         <activity
+            android:label="@string/dialog"
             android:name=".DialogActivity"
             android:exported="false" />
         <activity
+            android:label="@string/multiple_delete_item"
             android:name=".MultipleDeleteItemActivity"
             android:exported="false" />
         <activity
+            android:label="@string/tab_layout_with_view_pager"
             android:name=".TabLayoutWithViewPagerActivity"
             android:exported="false" />
         <activity
+            android:label="@string/animation"
             android:name=".AnimationActivity"
             android:exported="false" />
         <activity
+            android:label="@string/theme"
             android:name=".ThemeChangeActivity"
             android:exported="false" />
         <activity
+            android:label="@string/permission"
             android:name=".PermissionActivity"
             android:exported="false" />
         <activity
