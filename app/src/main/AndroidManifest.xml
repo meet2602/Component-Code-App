@@ -14,6 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
         <activity
+            android:name=".ImageSliderUsViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageSliderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity
             android:name=".BottomNavigationViewActivity"
             android:exported="false" />
         <activity

@@ -36,18 +36,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="1"
+                    android:text="@string/srNo"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/part_name"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:padding="8dp"
-                    android:text="Product Name"
+                    android:text="@string/enter_the_name"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />

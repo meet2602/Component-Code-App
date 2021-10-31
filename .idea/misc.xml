@@ -11,26 +11,36 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_bottom_navigation_view.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_expansion_panel.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_image_slider.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_image_slider_us_view_pager.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_multiple_delete_item.xml" value="0.264" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.176" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_permission.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_search.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_search_bar.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_search_with_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_side_bar_navigation_view.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_snack_bar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_tab_layout_with_view_pager.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_theme_change.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/app_bar_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/custom_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/expand_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_album.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_video.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/image_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/item_main.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/loading.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/nav_header_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/navigation_drawer_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/progress.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/snack_bar_light_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/navigation_drawer_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/search_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/menu/select_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/mipmap-anydpi-v26/app_logo.xml" value="0.14635416666666667" />

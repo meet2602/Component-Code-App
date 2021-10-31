@@ -44,6 +44,12 @@
     <string name="select_all">Select All</string>
     <string name="search">Search</string>
     <string name="search_view_with_menu">Search View with Menu</string>
-    <string name="srno">srNo</string>
+    <string name="srNo">srNo</string>
     <string name="bottom_navigation_view">Bottom Navigation View</string>
+    <string name="side_bar_navigation_view">Side Bar Navigation View</string>
+    <string name="image_slider">Image Slider</string>
+    <string name="image_slider_using_viewpager">Image Slider using ViewPager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
 </resources>

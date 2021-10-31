@@ -15,8 +15,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.materialsouk.allcodeapp.models.ExpandModel
 
 
-class ExpandAdapter (private var expandList: ArrayList<ExpandModel>)  :
-     RecyclerView.Adapter<ExpandAdapter.ViewHolder>() {
+class ExpandAdapter(private var expandList: ArrayList<ExpandModel>) :
+    RecyclerView.Adapter<ExpandAdapter.ViewHolder>() {
 
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
@@ -33,7 +33,7 @@ class ExpandAdapter (private var expandList: ArrayList<ExpandModel>)  :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.srNo.text = (position+1).toString()
+        holder.srNo.text = (position + 1).toString()
         holder.nameTxt.text = expandList[position].getName()
         val isExpanded: Boolean = expandList[position].getExpanded()
 

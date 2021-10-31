@@ -43,6 +43,12 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.bottomNavigationViewBtn).setOnClickListener {
             startActivity(Intent(this, BottomNavigationViewActivity::class.java))
         }
+        findViewById<Button>(R.id.sideBarNavigationViewBtn).setOnClickListener {
+            startActivity(Intent(this, NavigationDrawerActivity::class.java))
+        }
+        findViewById<Button>(R.id.imageSliderBtn).setOnClickListener {
+            startActivity(Intent(this, ImageSliderActivity::class.java))
+        }
     }
 
 

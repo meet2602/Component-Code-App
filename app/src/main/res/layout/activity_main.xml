@@ -81,6 +81,22 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:text="@string/bottom_navigation_view" />
+    <Button
+        android:id="@+id/sideBarNavigationViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/side_bar_navigation_view" />
 
+    <Button
+        android:id="@+id/imageSliderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/image_slider" />
 
 </LinearLayout>
