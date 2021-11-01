@@ -56,11 +56,16 @@
     <string name="multiple_image_select">Multiple Image Select</string>
     <string name="recycler_view_animation">Recycler View Animation</string>
 
-    <string name="animation_slide_from_right">Slide from right</string>
-    <string name="animation_slide_from_bottom">Slide from bottom</string>
-    <string name="animation_fall_down">Fall down</string>
-    <string name="animation_scale">Scale</string>
-    <string name="animation_scale_random">Scale random</string>
+    <string name="up_to_down">Up To Down</string>
+    <string name="right_to_left">Right To Left</string>
+    <string name="down_to_up">Down To Up</string>
+    <string name="left_to_right">left to right</string>
+
+    <string name="item_up_to_down">Item Up To Down</string>
+    <string name="item_right_to_left">Item Right To Left</string>
+    <string name="item_down_to_up">Item Down To Up</string>
+    <string name="item_left_to_right">Item Left To Right</string>
+
     <string name="refresh">Refresh</string>
 
 

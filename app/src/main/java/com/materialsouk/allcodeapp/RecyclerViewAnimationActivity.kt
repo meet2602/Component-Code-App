@@ -15,9 +15,14 @@ import com.materialsouk.allcodeapp.models.ExpandModel
 class RecyclerViewAnimationActivity : AppCompatActivity() {
 
     private val animationRes = arrayOf(
-        R.anim.layout_animation_fall_down,
-        R.anim.layout_animation_from_bottom,
-        R.anim.layout_animation_from_right
+        R.anim.layout_animation_up_to_down,
+        R.anim.layout_animation_down_to_up,
+        R.anim.layout_animation_left_to_right,
+        R.anim.layout_animation_right_to_left,
+        R.anim.up_to_down,
+        R.anim.down_to_up,
+        R.anim.left_to_right,
+        R.anim.right_to_left
     )
 
     var positions = 0
@@ -26,9 +31,14 @@ class RecyclerViewAnimationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recycler_view_animation)
 
         val animationName = arrayOf(
-            resources.getString(R.string.animation_fall_down),
-            resources.getString(R.string.animation_slide_from_bottom),
-            resources.getString(R.string.animation_slide_from_right),
+            resources.getString(R.string.up_to_down),
+            resources.getString(R.string.down_to_up),
+            resources.getString(R.string.left_to_right),
+            resources.getString(R.string.right_to_left),
+            resources.getString(R.string.item_up_to_down),
+            resources.getString(R.string.item_down_to_up),
+            resources.getString(R.string.item_left_to_right),
+            resources.getString(R.string.item_right_to_left),
         )
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         val arrayList = ArrayList<ExpandModel>()
@@ -58,11 +68,13 @@ class RecyclerViewAnimationActivity : AppCompatActivity() {
         arrayList.add(ExpandModel("Mom", false))
 
         val spin = findViewById<Spinner>(R.id.spinner)
-        findViewById<Button>(R.id.refreshBtn).setOnClickListener{
-            val adapter = RecyclerViewAnimAdapter(arrayList, animationRes[positions])
-            recyclerView.apply {
-                layoutAnimation =
-                    AnimationUtils.loadLayoutAnimation(context, animationRes[positions])
+        findViewById<Button>(R.id.refreshBtn).setOnClickListener {
+            val adapter = RecyclerViewAnimAdapter(arrayList, animationRes[positions], positions)
+            if (positions < 4) {
+                recyclerView.apply {
+                    layoutAnimation =
+                        AnimationUtils.loadLayoutAnimation(context, animationRes[positions])
+                }
             }
             recyclerView.adapter = adapter
         }
@@ -74,10 +86,12 @@ class RecyclerViewAnimationActivity : AppCompatActivity() {
                 id: Long
             ) {
                 positions = position
-                val adapter = RecyclerViewAnimAdapter(arrayList, animationRes[position])
-                recyclerView.apply {
-                    layoutAnimation =
-                        AnimationUtils.loadLayoutAnimation(context, animationRes[position])
+                val adapter = RecyclerViewAnimAdapter(arrayList, animationRes[position], positions)
+                if (positions < 4) {
+                    recyclerView.apply {
+                        layoutAnimation =
+                            AnimationUtils.loadLayoutAnimation(context, animationRes[position])
+                    }
                 }
                 recyclerView.adapter = adapter
             }
