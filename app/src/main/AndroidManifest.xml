@@ -14,13 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
         <activity
-            android:label="@string/recycler_view_animation"
-            android:name=".RecyclerViewAnimationActivity"
+            android:label="@string/image_slider_with_dot"
+            android:name=".ImageSliderWithDotActivity"
             android:exported="false" />
         <activity
-            android:label="@string/image_pick"
+            android:name=".RecyclerViewAnimationActivity"
+            android:exported="false"
+            android:label="@string/recycler_view_animation" />
+        <activity
             android:name=".ImagePickActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/image_pick" />
         <activity
             android:name=".ImageSliderUsViewPagerActivity"
             android:exported="false"

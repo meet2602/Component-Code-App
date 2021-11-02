@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable-v24/ic_baseline_delete_24.xml" value="0.2703125" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable-v24/ic_check.xml" value="0.2703125" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable/active_dot.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable/ic_baseline_mic_24.xml" value="0.2703125" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/drawable/non_active_dot.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_animation.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_bottom_navigation_view.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_dialog.xml" value="0.25416666666666665" />
@@ -14,6 +16,7 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_image_pick.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_image_slider.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_image_slider_us_view_pager.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_image_slider_with_dot.xml" value="0.21342592592592594" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_list_recycler_view_animation.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/activity_multiple_delete_item.xml" value="0.264" />
@@ -35,6 +38,7 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/fragment_video.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/image_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/item_image_slider_dot_layout.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/item_main.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/loading.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/AllCodeApp/app/src/main/res/layout/nav_header_main.xml" value="0.25416666666666665" />

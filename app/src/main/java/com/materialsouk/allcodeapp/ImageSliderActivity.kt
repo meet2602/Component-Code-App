@@ -12,5 +12,8 @@ class ImageSliderActivity : AppCompatActivity() {
         findViewById<Button>(R.id.imageSliderUsViewPagerBtn).setOnClickListener {
             startActivity(Intent(this, ImageSliderUsViewPagerActivity::class.java))
         }
+        findViewById<Button>(R.id.imageSliderWithDotBtn).setOnClickListener {
+            startActivity(Intent(this, ImageSliderWithDotActivity::class.java))
+        }
     }
 }
