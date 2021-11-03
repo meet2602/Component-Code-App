@@ -37,6 +37,7 @@ class WebViewActivity : AppCompatActivity() {
     private lateinit var edFileName: EditText
     private var webURL = "https://www.google.com/"
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
@@ -50,6 +51,13 @@ class WebViewActivity : AppCompatActivity() {
         )
         edFileName = findViewById(R.id.edFileName)
         edFileName.setText(webURL)
+        val settings = webView.settings
+        settings.javaScriptEnabled = true
+        settings.allowFileAccess = true
+        settings.domStorageEnabled = true
+        settings.javaScriptCanOpenWindowsAutomatically = true
+        settings.supportMultipleWindows()
+
         if (!isOnline()) {
             showToast(getString(R.string.no_internet))
             showNoNetSnackBar()
@@ -79,12 +87,7 @@ class WebViewActivity : AppCompatActivity() {
         if (isOnline() && !isLoaded) loadWebView()
         super.onResume()
     }
-
-    @SuppressLint("SetJavaScriptEnabled")
     private fun loadWebView() {
-
-        webView.settings.javaScriptEnabled = true
-        webView.settings.setSupportZoom(true)
         webView.loadUrl(webURL)
         webView.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(
