@@ -6,7 +6,7 @@ import android.net.Uri
 import android.view.*
 import androidx.viewpager.widget.PagerAdapter
 import com.materialsouk.allcodeapp.R
-import com.materialsouk.allcodeapp.ZoomClass
+import com.materialsouk.allcodeapp.method.ZoomClass
 import java.util.*
 import kotlin.collections.ArrayList
 

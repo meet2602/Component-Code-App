@@ -17,8 +17,6 @@ import android.os.Looper
 import android.provider.Settings
 import android.util.Log
 import android.view.KeyEvent
-import android.view.View
-import android.view.inputmethod.InputMethodManager
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
 import android.widget.Button
@@ -27,7 +25,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.snackbar.Snackbar
-import java.lang.Exception
+import com.materialsouk.allcodeapp.method.AllNormalMethod.hideKeyboard
 
 class WebViewActivity : AppCompatActivity() {
     private var isLoaded: Boolean = false
@@ -71,18 +69,11 @@ class WebViewActivity : AppCompatActivity() {
                 showToast(getString(R.string.no_internet))
                 showNoNetSnackBar()
             }
-            hideKeyboard(it)
+            hideKeyboard(this,it)
         }
     }
 
-    private fun hideKeyboard(view: View) {
-        try {
-            val imm: InputMethodManager =
-                getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.hideSoftInputFromWindow(view.windowToken, 0)
-        } catch (ignored: Exception) {
-        }
-    }
+
 
     override fun onResume() {
         if (isOnline() && !isLoaded) loadWebView()

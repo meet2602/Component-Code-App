@@ -6,9 +6,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import android.view.View
-import android.view.inputmethod.InputMethodManager
 import android.widget.*
-import java.lang.Exception
+import com.materialsouk.allcodeapp.method.AllNormalMethod.hideKeyboard
+
 
 
 class DialogActivity : AppCompatActivity() {
@@ -106,7 +106,7 @@ class DialogActivity : AppCompatActivity() {
             }
         }
         cancelBtn.setOnClickListener { v: View ->
-            hideKeyboard(v)
+            hideKeyboard(this,v)
             fileDialog.dismiss()
         }
         saveBtn.setOnClickListener { v: View ->
@@ -116,7 +116,7 @@ class DialogActivity : AppCompatActivity() {
                 Toast.makeText(this, "${edFileName.text}\n${fileTypeStr}", Toast.LENGTH_LONG)
                     .show()
             }
-            hideKeyboard(v)
+            hideKeyboard(this,v)
             fileDialog.dismiss()
         }
 
@@ -126,12 +126,4 @@ class DialogActivity : AppCompatActivity() {
 
     }
 
-    private fun hideKeyboard(view: View) {
-        try {
-            val imm: InputMethodManager =
-                getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.hideSoftInputFromWindow(view.windowToken, 0)
-        } catch (ignored: Exception) {
-        }
-    }
 }
