@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">All Code App</string>
+    <string name="app_name">All Component Code App</string>
     <string name="permission">Permission</string>
     <string name="multiple_permission">Multiple Permission</string>
     <string name="theme">Theme</string>
@@ -68,6 +68,13 @@
 
     <string name="refresh">Refresh</string>
     <string name="image_slider_with_dot">Image Slider With Dot</string>
-
+    <string name="room_database">Room Database</string>
+    <string name="firestore">Firestore</string>
+    <string name="firebase">Firebase</string>
+    <string name="all_authentication">All Authentication</string>
+    <string name="google_ads">Google Ads</string>
+    <string name="website_view">Website View</string>
+    <string name="no_internet">No Internet</string>
+    <string name="back_again_to_exit">Back again to exit</string>
 
 </resources>

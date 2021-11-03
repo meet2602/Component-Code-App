@@ -48,6 +48,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
             android:text="@string/recycler_view_animation" />
+
         <Button
             android:id="@+id/viewPageWithViewPagerBtn"
             android:layout_width="match_parent"
@@ -129,6 +130,60 @@
             android:layout_marginEnd="8dp"
             android:text="@string/image_pick" />
 
+        <Button
+            android:id="@+id/webViewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/website_view" />
+
+
+        <Button
+            android:id="@+id/allAuthenticationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/all_authentication" />
+
+        <Button
+            android:id="@+id/firebaseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/firebase" />
+
+        <Button
+            android:id="@+id/fireStoreBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/firestore" />
+
+        <Button
+            android:id="@+id/roomDatabaseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/room_database" />
+
+        <Button
+            android:id="@+id/googleAdsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/google_ads" />
 
     </LinearLayout>
 </ScrollView>

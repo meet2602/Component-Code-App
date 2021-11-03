@@ -55,6 +55,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.imagePickBtn).setOnClickListener {
             startActivity(Intent(this, ImagePickActivity::class.java))
         }
+        findViewById<Button>(R.id.webViewBtn).setOnClickListener {
+            startActivity(Intent(this, WebViewActivity::class.java))
+        }
     }
 
 
