@@ -37,7 +37,7 @@ class WebViewActivity : AppCompatActivity() {
     private lateinit var webView: WebView
     private lateinit var loadingDialog: Dialog
     private lateinit var edFileName: EditText
-    private var webURL = "https://www.geeksforgeeks.org/" // Change it with your URL
+    private var webURL = "https://www.google.com/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
