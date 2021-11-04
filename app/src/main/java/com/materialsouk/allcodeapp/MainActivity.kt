@@ -58,6 +58,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.shareDataBtn).setOnClickListener {
             startActivity(Intent(this, ShareAndCopyDataActivity::class.java))
         }
+        findViewById<Button>(R.id.anotherAppBtn).setOnClickListener {
+            startActivity(Intent(this, AnotherAppActivity::class.java))
+        }
         findViewById<Button>(R.id.webViewBtn).setOnClickListener {
             startActivity(Intent(this, WebViewActivity::class.java))
         }

@@ -137,6 +137,14 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
             android:text="@string/share_data" />
+        <Button
+            android:id="@+id/anotherAppBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/another_app_open" />
 
         <Button
             android:id="@+id/webViewBtn"

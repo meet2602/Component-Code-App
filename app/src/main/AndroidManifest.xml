@@ -16,9 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
         <activity
-            android:label="@string/share_data"
-            android:name=".ShareAndCopyDataActivity"
+            android:name=".AnotherAppActivity"
             android:exported="false" />
+        <activity
+            android:name=".ShareAndCopyDataActivity"
+            android:exported="false"
+            android:label="@string/share_data" />
         <activity
             android:name=".WebViewActivity"
             android:exported="false"

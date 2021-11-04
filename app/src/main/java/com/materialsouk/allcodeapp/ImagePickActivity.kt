@@ -23,7 +23,7 @@ import com.materialsouk.allcodeapp.method.AllNormalMethod.shareMultipleImage
 class ImagePickActivity : AppCompatActivity() {
     private lateinit var urlArray: ArrayList<String>
     private lateinit var urlNameArray: ArrayList<String>
-    var selectSingleImagePath :Uri? = null
+    private var selectSingleImagePath :Uri? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_image_pick)
