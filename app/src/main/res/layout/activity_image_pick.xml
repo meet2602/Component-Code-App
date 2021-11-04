@@ -73,11 +73,35 @@
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView1"
             tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/shareMultipleImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:visibility="gone"
+            android:text="@string/share_multiple_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shareImageFBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:srcCompat="@android:drawable/ic_menu_share"
+            tools:ignore="DuplicateSpeakableTextCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

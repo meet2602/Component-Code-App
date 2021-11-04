@@ -9,16 +9,21 @@ import android.net.Uri
 
 import android.provider.MediaStore
 import android.util.Log
+import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.materialsouk.allcodeapp.adapters.ImageUsPagerAdapter
+import com.materialsouk.allcodeapp.method.AllNormalMethod.shareImage
+import com.materialsouk.allcodeapp.method.AllNormalMethod.shareMultipleImage
 
 
 class ImagePickActivity : AppCompatActivity() {
     private lateinit var urlArray: ArrayList<String>
     private lateinit var urlNameArray: ArrayList<String>
+    var selectSingleImagePath :Uri? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_image_pick)
@@ -37,6 +42,9 @@ class ImagePickActivity : AppCompatActivity() {
                     // Get the path from the Uri
                     val path = getPathFromURI(selectedImageUri)
                     findViewById<TextView>(R.id.textView).text = path
+                    selectSingleImagePath = selectedImageUri
+                    findViewById<FloatingActionButton>(R.id.shareImageFBtn).visibility =
+                        View.VISIBLE
                     findViewById<ImageView>(R.id.imageView2).setImageURI(selectedImageUri)
 
                 }
@@ -73,6 +81,7 @@ class ImagePickActivity : AppCompatActivity() {
                         urlNameArray.add(path)
                     }
                     findViewById<TextView>(R.id.textView1).text = urlNameArray.toString()
+                    findViewById<Button>(R.id.shareMultipleImageBtn).visibility = View.VISIBLE
                     val mViewPagerAdapter = ImageUsPagerAdapter(false, this, null, urlArray)
                     mViewPager.adapter = mViewPagerAdapter
                 }
@@ -91,6 +100,17 @@ class ImagePickActivity : AppCompatActivity() {
                 )
             )
         }
+        findViewById<FloatingActionButton>(R.id.shareImageFBtn).setOnClickListener {
+            shareImage(this, selectSingleImagePath!!)
+        }
+        findViewById<Button>(R.id.shareMultipleImageBtn).setOnClickListener {
+            val uri: ArrayList<Uri> = ArrayList()
+            for (i in urlArray) {
+                uri.add(Uri.parse(i))
+            }
+            shareMultipleImage(this, uri)
+        }
+
 
     }
 

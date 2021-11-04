@@ -76,5 +76,11 @@
     <string name="website_view">Website View</string>
     <string name="no_internet">No internet connection!</string>
     <string name="back_again_to_exit">Please click BACK again to exit</string>
+    <string name="share_data">Share &amp; Copy Data</string>
+    <string name="enter_the_link">Enter the link</string>
+    <string name="share">Share</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
+    <string name="share_multiple_image">Share Multiple Image</string>
 
 </resources>
