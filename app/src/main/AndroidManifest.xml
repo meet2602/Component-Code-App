@@ -15,9 +15,11 @@
         android:roundIcon="@mipmap/app_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
+
         <activity
             android:name=".AnotherAppActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/another_app_open" />
         <activity
             android:name=".ShareAndCopyDataActivity"
             android:exported="false"
@@ -105,6 +107,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:label="@string/interstitial_ads"
+            android:name=".googleAds.InterstitialAdsActivity"
+            android:exported="false" />
+        <activity
+            android:label="@string/banner_ads"
+            android:name=".googleAds.BannerAdsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoogleAdsActivity"
+            android:exported="false"
+            android:label="@string/google_ads" /> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
     </application>
 
 </manifest>

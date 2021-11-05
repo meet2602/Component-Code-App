@@ -89,5 +89,13 @@
     <string name="gmail">Gmail</string>
     <string name="github">Github</string>
     <string name="share_app">Share App</string>
+    <string name="banner_ads">Banner Ads</string>
+    <string name="interstitial_ads">Interstitial ads</string>
+    <string name="rewarded_ads">Rewarded ads</string>
+    <string name="bannerAdsId">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitialAdsId">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="rewardedAdsId">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="interstitial_ads_with_one_time_view">Interstitial ads not showing with 3 second click button and Interstitial Ads with one time view go to main Activity an repeat</string>
+    <string name="rewarded_amount">Rewarded Amount</string>
 
 </resources>

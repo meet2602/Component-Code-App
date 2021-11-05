@@ -64,6 +64,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.webViewBtn).setOnClickListener {
             startActivity(Intent(this, WebViewActivity::class.java))
         }
+        findViewById<Button>(R.id.googleAdsBtn).setOnClickListener {
+            startActivity(Intent(this, GoogleAdsActivity::class.java))
+        }
     }
 
 

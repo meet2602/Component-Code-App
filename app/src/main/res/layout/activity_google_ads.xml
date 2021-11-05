@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AnotherAppActivity">
+    tools:context=".GoogleAdsActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -16,59 +17,42 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/shareAppBtn"
+            android:id="@+id/banner_adsBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/share_app" />
+            android:text="@string/banner_ads" />
 
         <Button
-            android:id="@+id/playStoreBtn"
+            android:id="@+id/interstitial_adsBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/play_store" />
-
-        <Button
-            android:id="@+id/instagramBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/instagram" />
-
-        <Button
-            android:id="@+id/facebookBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/facebook" />
+            android:text="@string/interstitial_ads" />
 
 
         <Button
-            android:id="@+id/gmailBtn"
+            android:id="@+id/rewarded_adsBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/gmail" />
+            android:text="@string/rewarded_ads" />
 
-        <Button
-            android:id="@+id/githubBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/github" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/totalRewardedAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rewarded_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
