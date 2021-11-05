@@ -11,7 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
+        <Button
+            android:id="@+id/allInstalledAppBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/all_installed_app" />
 
         <Button
             android:id="@+id/permissionBtn"
@@ -163,41 +170,41 @@
             android:layout_marginEnd="8dp"
             android:text="@string/google_ads" />
 
-        <Button
-            android:id="@+id/allAuthenticationBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/all_authentication" />
+<!--        <Button-->
+<!--            android:id="@+id/allAuthenticationBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="@string/all_authentication" />-->
 
-        <Button
-            android:id="@+id/firebaseBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/firebase" />
+<!--        <Button-->
+<!--            android:id="@+id/firebaseBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="@string/firebase" />-->
 
-        <Button
-            android:id="@+id/fireStoreBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/firestore" />
+<!--        <Button-->
+<!--            android:id="@+id/fireStoreBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="@string/firestore" />-->
 
-        <Button
-            android:id="@+id/roomDatabaseBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/room_database" />
+<!--        <Button-->
+<!--            android:id="@+id/roomDatabaseBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="@string/room_database" />-->
 
 
 

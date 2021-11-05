@@ -15,7 +15,10 @@
         android:roundIcon="@mipmap/app_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
-
+        <activity
+            android:label="@string/all_installed_app"
+            android:name=".AllInstalledAppActivity"
+            android:exported="false" />
         <activity
             android:name=".AnotherAppActivity"
             android:exported="false"
@@ -108,13 +111,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:label="@string/interstitial_ads"
             android:name=".googleAds.InterstitialAdsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/interstitial_ads" />
         <activity
-            android:label="@string/banner_ads"
             android:name=".googleAds.BannerAdsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/banner_ads" />
         <activity
             android:name=".GoogleAdsActivity"
             android:exported="false"

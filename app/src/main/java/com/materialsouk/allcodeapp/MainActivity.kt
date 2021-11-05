@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.permissionBtn).setOnClickListener {
             startActivity(Intent(this, PermissionActivity::class.java))
         }
+        findViewById<Button>(R.id.allInstalledAppBtn).setOnClickListener {
+            startActivity(Intent(this, AllInstalledAppActivity::class.java))
+        }
         findViewById<Button>(R.id.themeBtn).setOnClickListener {
             startActivity(Intent(this, ThemeChangeActivity::class.java))
         }

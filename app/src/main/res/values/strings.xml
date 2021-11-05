@@ -97,5 +97,8 @@
     <string name="rewardedAdsId">ca-app-pub-3940256099942544/5224354917</string>
     <string name="interstitial_ads_with_one_time_view">Interstitial ads not showing with 3 second click button and Interstitial Ads with one time view go to main Activity an repeat</string>
     <string name="rewarded_amount">Rewarded Amount</string>
+    <string name="all_installed_app">All Installed App</string>
+    <string name="app_package_name">App Package Name</string>
+    <string name="total_Installed_Apps">Total Installed Apps:</string>
 
 </resources>
