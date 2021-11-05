@@ -25,14 +25,13 @@ class AllInstalledAppActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var installedAppsList: ArrayList<AppModel>
     private lateinit var installedAppAdapter: AppAdapter
-    private lateinit var loadingDialog: Dialog
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_all_installed_app)
         recyclerView = findViewById(R.id.recycler_view)
-        loadingDialog = Dialog(this)
+        val loadingDialog = Dialog(this)
         loadingDialog.setContentView(R.layout.loading)
         loadingDialog.window!!.setLayout(
             LinearLayout.LayoutParams.WRAP_CONTENT,

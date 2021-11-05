@@ -15,6 +15,7 @@ import java.util.ArrayList
 import android.content.Intent
 import android.net.Uri
 import android.provider.Settings
+import android.widget.Toast
 
 
 class AppAdapter(private val context: Context, private var appModelList: ArrayList<AppModel>) :
@@ -29,7 +30,8 @@ class AppAdapter(private val context: Context, private var appModelList: ArrayLi
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View =
-            LayoutInflater.from(parent.context).inflate(R.layout.installed_app_layout, parent, false)
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.installed_app_layout, parent, false)
         return ViewHolder(view)
     }
 
@@ -38,23 +40,28 @@ class AppAdapter(private val context: Context, private var appModelList: ArrayLi
         holder.appIcon.setImageDrawable(appModelList[position].getIcon())
         holder.appPackageNameTxt.text = appModelList[position].getPackages()
 
-        holder.itemView.setOnClickListener{
+        holder.itemView.setOnClickListener {
             val dialogListTitle = arrayOf("Open App", "App Info")
             val builder: AlertDialog.Builder = AlertDialog.Builder(context)
             builder.setTitle("Choose Action")
                 .setItems(
                     dialogListTitle
                 ) { _, which ->
-                     when (which) {
+                    when (which) {
                         0 -> {
                             val intent =
                                 context.packageManager.getLaunchIntentForPackage(appModelList[position].getPackages())
-                            context.startActivity(intent)
+                            if (intent != null) {
+                                context.startActivity(intent)
+                            }else{
+                                Toast.makeText(context,"System app is not open for any reason.",Toast.LENGTH_LONG).show()
+                            }
                         }
                         1 -> {
                             val intent = Intent()
                             intent.action = Settings.ACTION_APPLICATION_DETAILS_SETTINGS
-                            intent.data = Uri.parse("package:${appModelList[position].getPackages()}")
+                            intent.data =
+                                Uri.parse("package:${appModelList[position].getPackages()}")
                             context.startActivity(intent)
                         }
                     }
