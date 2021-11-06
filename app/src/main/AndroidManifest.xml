@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.materialsouk.allcodeapp">
+    package="com.materialsouk.allcodeapp" >
 
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -14,11 +14,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/app_logo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AllCodeApp">
+        android:theme="@style/Theme.AllCodeApp" >
         <activity
-            android:label="@string/all_installed_app"
-            android:name=".AllInstalledAppActivity"
+            android:label="@string/date_amp_time_picker"
+            android:name=".DateAndTimePickerActivity"
             android:exported="false" />
+        <activity
+            android:name=".AllInstalledAppActivity"
+            android:exported="false"
+            android:label="@string/all_installed_app" />
         <activity
             android:name=".AnotherAppActivity"
             android:exported="false"
@@ -103,7 +107,7 @@
             android:label="@string/permission" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

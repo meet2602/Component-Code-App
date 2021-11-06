@@ -100,5 +100,12 @@
     <string name="all_installed_app">All Installed App</string>
     <string name="app_package_name">App Package Name</string>
     <string name="total_Installed_Apps">Total Installed Apps:</string>
+    <string name="price">Price:</string>
+    <string name="rs_85941">Rs.85941/-</string>
+    <string name="dealer_price">Dealer Price:</string>
+    <string name="rs_85641">Rs.85641/-</string>
+    <string name="date_amp_time_picker">Date &amp; Time Picker</string>
+    <string name="time_picker">Time Picker</string>
+    <string name="date_picker">Date Picker</string>
 
 </resources>

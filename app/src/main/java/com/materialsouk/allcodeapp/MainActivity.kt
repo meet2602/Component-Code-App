@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.animationBtn).setOnClickListener {
             startActivity(Intent(this, AnimationActivity::class.java))
         }
+        findViewById<Button>(R.id.dateAndTimePickerBtn).setOnClickListener {
+            startActivity(Intent(this, DateAndTimePickerActivity::class.java))
+        }
         findViewById<Button>(R.id.recyclerViewAnimationBtn).setOnClickListener {
             startActivity(Intent(this, RecyclerViewAnimationActivity::class.java))
         }
