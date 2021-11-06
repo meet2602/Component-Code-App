@@ -15,9 +15,10 @@ class DateAndTimePickerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_date_and_time_picker)
+
+        // todo: date picker code
         val cal = Calendar.getInstance()
         findViewById<TextView>(R.id.dateTxt).text = "--/--/----"
-        findViewById<TextView>(R.id.timeTxt).text = "--:--"
         val dateSetListener =
             DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
                 cal.set(Calendar.YEAR, year)
@@ -36,7 +37,10 @@ class DateAndTimePickerActivity : AppCompatActivity() {
                 cal.get(Calendar.DAY_OF_MONTH)
             ).show()
         }
+        // todo: date picker code
 
+        // todo: time picker code
+        findViewById<TextView>(R.id.timeTxt).text = "--:--"
         val mTimePicker: TimePickerDialog
         val mCurrentTime = Calendar.getInstance()
         val hour = mCurrentTime.get(Calendar.HOUR_OF_DAY)
@@ -52,6 +56,7 @@ class DateAndTimePickerActivity : AppCompatActivity() {
         findViewById<Button>(R.id.timePickerBtn).setOnClickListener {
             mTimePicker.show()
         }
+        // todo: time picker code
 
     }
 
