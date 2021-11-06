@@ -64,6 +64,7 @@ class AllInstalledAppActivity : AppCompatActivity() {
                 installedAppsList.add(AppModel(appName, icon, packages))
             }
         }
+        installedAppsList.sortBy { it.getName() }
         return installedAppsList
     }
 
