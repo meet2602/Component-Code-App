@@ -8,7 +8,6 @@ import android.widget.Toast
 import com.materialsouk.allcodeapp.method.AllNormalMethod.copyToClipBoard
 import com.materialsouk.allcodeapp.method.AllNormalMethod.pasteFromClipBoard
 
-import android.content.Intent
 import com.materialsouk.allcodeapp.method.AllNormalMethod.shareText
 
 

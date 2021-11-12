@@ -64,10 +64,16 @@ class AllInstalledAppActivity : AppCompatActivity() {
                 installedAppsList.add(AppModel(appName, icon, packages))
             }
         }
-        installedAppsList.sortBy { it.getName() }
+        installedAppsList.sortBy { it.getName().capitalized() }
         return installedAppsList
     }
-
+    private fun String.capitalized(): String {
+        return this.replaceFirstChar {
+            if (it.isLowerCase())
+                it.titlecase(Locale.getDefault())
+            else it.toString()
+        }
+    }
     private fun isSystemPackage(pkgInfo: PackageInfo): Boolean {
         return pkgInfo.applicationInfo.flags and ApplicationInfo.FLAG_SYSTEM != 0
     }

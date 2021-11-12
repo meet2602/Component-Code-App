@@ -10,6 +10,12 @@ import android.os.Bundle
 import android.widget.Button
 import com.materialsouk.allcodeapp.method.AllNormalMethod.shareText
 import android.content.pm.PackageManager
+import android.widget.Toast
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.play.core.review.ReviewInfo
+import com.google.android.play.core.review.ReviewManager
+import com.google.android.play.core.review.ReviewManagerFactory
+import com.google.android.play.core.tasks.Task
 
 
 class AnotherAppActivity : AppCompatActivity() {
@@ -51,6 +57,45 @@ class AnotherAppActivity : AppCompatActivity() {
                 )
             )
         }
+        val reviewManager = ReviewManagerFactory.create(this)
+        findViewById<Button>(R.id.rateUsBtn).setOnClickListener {
+            showRateApp(reviewManager)
+        }
+    }
+
+    private fun showRateApp(reviewManager: ReviewManager) {
+        val request = reviewManager.requestReviewFlow()
+        request.addOnCompleteListener { task: Task<ReviewInfo?> ->
+            if (task.isSuccessful) {
+                val reviewInfo = task.result
+                val flow =
+                    reviewManager.launchReviewFlow(this, reviewInfo)
+                flow.addOnCompleteListener {
+                    Toast.makeText(
+                        applicationContext,
+                        "In App Rating completed!",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            } else {
+                showRateAppFallbackDialog()
+            }
+        }
+    }
+
+    private fun showRateAppFallbackDialog() {
+        MaterialAlertDialogBuilder(this)
+            .setTitle(R.string.rate_app_title)
+            .setMessage(R.string.rate_app_message)
+            .setPositiveButton(R.string.rate_btn_pos) { _, _ -> redirectToPlayStore() }
+            .setNegativeButton(
+                R.string.rate_btn_neg
+            ) { _, _ -> }
+            .setNeutralButton(
+                R.string.rate_btn_nut
+            ) { _, _ -> }
+            .setOnDismissListener { }
+            .show()
     }
 
     private fun redirectToPlayStore() {
