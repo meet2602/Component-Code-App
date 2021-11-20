@@ -22,19 +22,31 @@
             android:textAlignment="center"
             android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/datePickerBtn"
+      <Button
+            android:id="@+id/simpleDatePickerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:text="@string/date_picker" />
+        <Button
+            android:id="@+id/materialDatePickerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/material_date_picker" />
 
         <Button
-            android:id="@+id/timePickerBtn"
+            android:id="@+id/simpleTimePickerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:text="@string/time_picker" />
+        <Button
+            android:id="@+id/materialTimePickerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/material_time_picker" />
 
         <TextView
             android:id="@+id/timeTxt"

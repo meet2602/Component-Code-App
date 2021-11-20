@@ -104,9 +104,12 @@
     <string name="rs_85941">Rs.85941/-</string>
     <string name="dealer_price">Dealer Price:</string>
     <string name="rs_85641">Rs.85641/-</string>
+
     <string name="date_amp_time_picker">Date &amp; Time Picker</string>
-    <string name="time_picker">Time Picker</string>
-    <string name="date_picker">Date Picker</string>
+    <string name="time_picker">Simple Time Picker</string>
+    <string name="date_picker">Simple Date Picker</string>
+    <string name="material_date_picker">Material Date Picker</string>
+    <string name="material_time_picker">Material Time Picker</string>
 
     <string name="rate_us">Rate us</string>
     <string name="rate_app_title">Rate this App</string>
@@ -114,5 +117,6 @@
     <string name="rate_btn_pos">Rate Now</string>
     <string name="rate_btn_neg">Remind me later</string>
     <string name="rate_btn_nut">No, Thanks</string>
+
 
 </resources>

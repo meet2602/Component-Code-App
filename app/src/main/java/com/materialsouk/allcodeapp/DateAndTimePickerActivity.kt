@@ -7,6 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.google.android.material.datepicker.MaterialDatePicker
+import com.google.android.material.timepicker.MaterialTimePicker
+import com.google.android.material.timepicker.TimeFormat
+import java.text.DecimalFormat
+import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -16,7 +21,7 @@ class DateAndTimePickerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_date_and_time_picker)
 
-        // todo: date picker code
+        // todo: Simple date picker code
         val cal = Calendar.getInstance()
         findViewById<TextView>(R.id.dateTxt).text = "--/--/----"
         val dateSetListener =
@@ -24,11 +29,11 @@ class DateAndTimePickerActivity : AppCompatActivity() {
                 cal.set(Calendar.YEAR, year)
                 cal.set(Calendar.MONTH, monthOfYear)
                 cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-                val myFormat = "dd/MM/yyyy" // mention the format you need
+                val myFormat = "dd-MMM-yyyy" // mention the format you need
                 val sdf = SimpleDateFormat(myFormat, Locale.US)
                 findViewById<TextView>(R.id.dateTxt).text = sdf.format(cal.time)
             }
-        findViewById<Button>(R.id.datePickerBtn).setOnClickListener {
+        findViewById<Button>(R.id.simpleDatePickerBtn).setOnClickListener {
             DatePickerDialog(
                 this,
                 dateSetListener,
@@ -37,9 +42,27 @@ class DateAndTimePickerActivity : AppCompatActivity() {
                 cal.get(Calendar.DAY_OF_MONTH)
             ).show()
         }
-        // todo: date picker code
+        // todo: Simple date picker code
 
-        // todo: time picker code
+        // todo: Material date picker code
+        val materialDatePicker =
+            MaterialDatePicker.Builder.datePicker()
+                .setTitleText("Select Date")
+              //  .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
+                .build()
+        materialDatePicker.addOnPositiveButtonClickListener {
+            val myFormat = "dd-MMM-yyyy" // mention the format you need
+            val sdf = SimpleDateFormat(myFormat, Locale.US)
+            findViewById<TextView>(R.id.dateTxt).text = sdf.format(materialDatePicker.selection)
+        }
+        findViewById<Button>(R.id.materialDatePickerBtn).setOnClickListener {
+            materialDatePicker.show(supportFragmentManager,"MATERIAL_DATE_PICKER")
+        }
+        // todo: Material date picker code
+
+
+
+        // todo: Simple time picker code
         findViewById<TextView>(R.id.timeTxt).text = "--:--"
         val mTimePicker: TimePickerDialog
         val mCurrentTime = Calendar.getInstance()
@@ -50,13 +73,34 @@ class DateAndTimePickerActivity : AppCompatActivity() {
             { _, hourOfDay, minute ->
                 val modifiedHour = getHourAMPM(hourOfDay)
                 val pmAm = if (hourOfDay > 11) "PM" else "AM"
-                findViewById<TextView>(R.id.timeTxt).text = "$modifiedHour:$minute $pmAm"
+                val f: NumberFormat = DecimalFormat("00")
+                findViewById<TextView>(R.id.timeTxt).text = "${f.format(modifiedHour)}:${f.format(minute)} $pmAm"
+
             }, hour, minutes, false)
 
-        findViewById<Button>(R.id.timePickerBtn).setOnClickListener {
+        findViewById<Button>(R.id.simpleTimePickerBtn).setOnClickListener {
             mTimePicker.show()
         }
-        // todo: time picker code
+        // todo: Simple time picker code
+
+        // todo: Material time picker code
+        val materialTimePicker =
+            MaterialTimePicker.Builder()
+                .setTimeFormat(TimeFormat.CLOCK_12H)
+                .setTitleText("Select Time")
+                .build()
+        materialTimePicker.addOnPositiveButtonClickListener{
+            val pickedHour: Int = materialTimePicker.hour
+            val pickedMinute: Int = materialTimePicker.minute
+            val modifiedHour = getHourAMPM(pickedHour)
+            val f: NumberFormat = DecimalFormat("00")
+            val pmAm = if (pickedHour > 11) "PM" else "AM"
+            findViewById<TextView>(R.id.timeTxt).text = "${f.format(modifiedHour)}:${f.format(pickedMinute)} $pmAm"
+        }
+        findViewById<Button>(R.id.materialTimePickerBtn).setOnClickListener {
+            materialTimePicker.show(supportFragmentManager, "MATERIAL_TIME_PICKER")
+        }
+        // todo: Material time picker code
 
     }
 
