@@ -43,6 +43,12 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.dialogBtn).setOnClickListener {
             startActivity(Intent(this, DialogActivity::class.java))
         }
+        findViewById<Button>(R.id.formValidationBtn).setOnClickListener {
+            startActivity(Intent(this, FormValidateActivity::class.java))
+        }
+        findViewById<Button>(R.id.downloadAnyFileBtn).setOnClickListener {
+            startActivity(Intent(this, DownloadAnyFileActivity::class.java))
+        }
         findViewById<Button>(R.id.expansionPanelBtn).setOnClickListener {
             startActivity(Intent(this, ExpansionPanelActivity::class.java))
         }

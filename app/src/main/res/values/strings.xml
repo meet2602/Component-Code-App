@@ -117,6 +117,13 @@
     <string name="rate_btn_pos">Rate Now</string>
     <string name="rate_btn_neg">Remind me later</string>
     <string name="rate_btn_nut">No, Thanks</string>
+    <string name="download">Download</string>
+    <string name="download_any_file">Download Any File</string>
+    <string name="enter_the_email">Enter the Email</string>
+    <string name="enter_the_password">Enter the Password</string>
+    <string name="validate">validate</string>
+    <string name="form_validation">Form Validation</string>
+    <string name="enter_the_confirm_password">Enter the confirm Password</string>
 
 
 </resources>

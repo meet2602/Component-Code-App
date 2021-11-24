@@ -55,6 +55,14 @@
             android:layout_marginEnd="8dp"
             android:text="@string/date_amp_time_picker" />
         <Button
+            android:id="@+id/formValidationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/form_validation" />
+        <Button
             android:id="@+id/dialogBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,6 +70,14 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
             android:text="@string/dialog" />
+        <Button
+            android:id="@+id/downloadAnyFileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/download_any_file" />
 
         <Button
             android:id="@+id/expansionPanelBtn"
