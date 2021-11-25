@@ -124,6 +124,9 @@
     <string name="validate">validate</string>
     <string name="form_validation">Form Validation</string>
     <string name="enter_the_confirm_password">Enter the confirm Password</string>
+    <string name="internet_is_available">Internet is Available</string>
+    <string name="try_again">Try Again</string>
+    <string name="check_internet">Check Internet</string>
 
 
 </resources>

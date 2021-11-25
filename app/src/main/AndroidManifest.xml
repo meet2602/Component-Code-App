@@ -22,13 +22,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllCodeApp">
         <activity
-            android:label="@string/form_validation"
-            android:name=".FormValidateActivity"
-            android:exported="false" />
+            android:name=".CheckInternetActivity"
+            android:exported="false"
+            android:label="@string/check_internet" />
         <activity
-            android:label="@string/download_any_file"
+            android:name=".FormValidateActivity"
+            android:exported="false"
+            android:label="@string/form_validation" />
+        <activity
             android:name=".DownloadAnyFileActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/download_any_file" />
         <activity
             android:name=".ReceivingDataFromOtherAppActivity"
             android:exported="true">

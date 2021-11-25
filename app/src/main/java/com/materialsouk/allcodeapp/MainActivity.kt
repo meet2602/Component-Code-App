@@ -43,6 +43,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.dialogBtn).setOnClickListener {
             startActivity(Intent(this, DialogActivity::class.java))
         }
+        findViewById<Button>(R.id.checkInternetBtn).setOnClickListener {
+            startActivity(Intent(this, CheckInternetActivity::class.java))
+        }
         findViewById<Button>(R.id.formValidationBtn).setOnClickListener {
             startActivity(Intent(this, FormValidateActivity::class.java))
         }
